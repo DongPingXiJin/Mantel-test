@@ -99,7 +99,8 @@ Modify the color matching and legend of the thermal diagram：
 
 Set mantel test connection line
 
-####################################################################             
+####################################################################   
+
 	     scale_size_manual(values = c(0.5, 1, 1.5, 2)) +
 	     
              scale_colour_manual(values = color_pal(3)) +
