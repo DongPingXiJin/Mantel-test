@@ -11,3 +11,4 @@ eg.
 
 To draw such a picture, you need to first analyze the composition of the picture.
 ![image](https://github.com/DongPingXiJin/Mantel-test-use-LinKet-/blob/main/images/1663642080039.png)
+![image](https://github.com/DongPingXiJin/Mantel-test-use-LinKet-/blob/main/images/1663642614248.png)
