@@ -30,3 +30,12 @@ spec_select = list(Y1 = 1,
                                            Y3 = 3,
                                            Y4 = 4
                                            )) 
+
+ mutate(rd = cut(r, breaks = c(-Inf, 0.2, 0.4, Inf),
+ 
+                  labels = c("< 0.2", "0.2 - 0.4", ">= 0.4")),
+                  
+         pd = cut(p, breaks = c(-Inf, 0.01, 0.05, Inf),
+         
+                  labels = c("< 0.01", "0.01 - 0.05", ">= 0.05")))
+                 
