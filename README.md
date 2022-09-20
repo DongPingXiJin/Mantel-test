@@ -12,3 +12,21 @@ eg.
 To draw such a picture, you need to first analyze the composition of the picture.
 ![image](https://github.com/DongPingXiJin/Mantel-test-use-LinKet-/blob/main/images/1663642080039.png)
 ![image](https://github.com/DongPingXiJin/Mantel-test-use-LinKet-/blob/main/images/1663646346589.png)
+
+Before using, you need to save the two matrix data in. csv format. And specify which matrix is used for correlation analysis thermodynamic diagram.
+
+Several program descriptions:
+
+spec_select = list(Y1 = 1:7,
+                                           Y2 = 8:18,
+                                           Y3 = 19:37,
+                                           Y4 = 38:44
+                                           )) 
+
+The matrix A is classified according to the columns, where 1-7 is divided into the first category, 8-18 into the second category, and so on. Later, you can flexibly apply and modify according to your own data. For example, if you want to divide the data into four categories with only four columns, you can write: 
+
+spec_select = list(Y1 = 1,
+                                           Y2 = 2,
+                                           Y3 = 3,
+                                           Y4 = 4
+                                           )) 
