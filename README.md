@@ -1,4 +1,4 @@
- Matel test based on R language visualization
+                  Matel test based on R language visualization
  
 ##Mantel code and test files (A.csv, B.csv) have been uploaded today.（2022/09/20）#####
 
