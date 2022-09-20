@@ -6,4 +6,7 @@ Note: If you want to apply this code. First, download R studio and R on your com
 
 Mantel test can analyze the correlation of two matrices (matrix A and matrix B).If you want to know more about mantel analysis, you can read this paper: https://doi.org/10.1111/2041-210x.12018.
 
+eg.
 ![image](https://github.com/DongPingXiJin/Mantel-test-use-LinKet-/blob/main/images/Mantel%20test.jpg)
+
+To draw such a picture, you need to first analyze the composition of the picture.
