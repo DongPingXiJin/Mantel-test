@@ -75,5 +75,15 @@ geom_couple(aes(colour = pd, size = rd),data = mantel01, curvature = 0.1,
               )
               
 ####################################################################
-              
 
+Modify the color matching and legend of the thermal diagram：
+
+#####################################################################	
+
+                      scale_fill_gradientn(colours = RColorBrewer::brewer.pal(11, "RdBu"),
+
+                       limits = c(-1, 1),
+											 
+                       breaks = seq(-1,1,0.5))
+											 
+#####################################################################											 
