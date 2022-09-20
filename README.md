@@ -59,3 +59,21 @@ qcorrplot(correlate(env),
   geom_square()
   
 ######################################################################
+
+Modify the color and size of the mantel test connection point：
+
+#####################################################################
+
+geom_couple(aes(colour = pd, size = rd),data = mantel01, curvature = 0.1,
+
+              node.colour = c("blue", "blue"),
+              
+              node.fill = c("grey", "grey"),
+              
+              node.size = c(3.5, 2.5),
+              
+              )
+              
+####################################################################
+              
+
