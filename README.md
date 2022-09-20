@@ -55,6 +55,7 @@ Analyze mantel test results, classify r and p values and define labels：
 #######################################################################
 
 Draw thermodynamic diagram：
+
 ######################################################################
 
           qcorrplot(correlate(env), 
@@ -99,11 +100,41 @@ Modify the color matching and legend of the thermal diagram：
 
 Set mantel test connection line
 
-####################################################################   
+##################################################################### 
 
 	     scale_size_manual(values = c(0.5, 1, 1.5, 2)) +
 	     
              scale_colour_manual(values = color_pal(3)) +
 	     
-####################################################################
+#####################################################################
 
+Set up labels and legends：
+
+#####################################################################
+
+                    guides(size = guide_legend(title = "Mantel's r",
+                             override.aes = list(colour = "grey35"), 
+                             order = 2),
+                     colour = guide_legend(title = "Mantel's P", 
+                               override.aes = list(size = 1.5), 
+                               order = 1),
+                     fill = guide_colorbar(title = "Pearson's r", order = 3))
+	 
+######################################################################
+
+Save Image：
+
+######################################################################
+
+             ggsave("Mantel test.tiff",width = 8,height = 6)
+	     
+######################################################################
+
+
+Pay attention:
+
+1. A.csv and B. must be guaranteed The csv is in the same path as the program file.
+
+2.Two matrices for mantel tset must have the same number of rows
+
+##################################################################################################################################################
