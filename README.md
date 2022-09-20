@@ -46,10 +46,16 @@ Analyze mantel test results, classify r and p values and define labels：
 #######################################################################
 
 Draw thermodynamic diagram：
-##################################################
+######################################################################
+
 qcorrplot(correlate(env), 
-          type = "lower",
-          diag = FALSE,
+
+          type = "lower",    //Display the lower triangle thermodynamic diagram, which can be modified to "upper" to display the upper triangle thermodynamic diagram
+          
+          diag = FALSE,     // Don't show diagonal
+          
           ) +
+          
   geom_square()
-########################################################
+  
+######################################################################
