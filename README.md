@@ -17,25 +17,34 @@ Before using, you need to save the two matrix data in. csv format. And specify w
 
 Several program descriptions:
 
-spec_select = list(Y1 = 1:7,
+                               spec_select = list(Y1 = 1:7,
+			       
                                            Y2 = 8:18,
+					   
                                            Y3 = 19:37,
+					   
                                            Y4 = 38:44
+					   
                                            )) 
 
 The matrix A is classified according to the columns, where 1-7 is divided into the first category, 8-18 into the second category, and so on. Later, you can flexibly apply and modify according to your own data. For example, if you want to divide the data into four categories with only four columns, you can write: 
 
-spec_select = list(Y1 = 1,
+                                   spec_select = list(Y1 = 1,
+				   
                                            Y2 = 2,
+					   
                                            Y3 = 3,
+					   
                                            Y4 = 4
+					   
                                            )) 
+					   
                                            
 Analyze mantel test results, classify r and p values and define labels：
 
 ######################################################################
 
- mutate(rd = cut(r, breaks = c(-Inf, 0.2, 0.4, Inf),
+                 mutate(rd = cut(r, breaks = c(-Inf, 0.2, 0.4, Inf),
  
                   labels = c("< 0.2", "0.2 - 0.4", ">= 0.4")),
                   
@@ -48,7 +57,7 @@ Analyze mantel test results, classify r and p values and define labels：
 Draw thermodynamic diagram：
 ######################################################################
 
-qcorrplot(correlate(env), 
+          qcorrplot(correlate(env), 
 
           type = "lower",    //Display the lower triangle thermodynamic diagram, which can be modified to "upper" to display the upper triangle thermodynamic diagram
           
@@ -56,7 +65,7 @@ qcorrplot(correlate(env),
           
           ) +
           
-  geom_square()
+         geom_square()
   
 ######################################################################
 
@@ -64,7 +73,7 @@ Modify the color and size of the mantel test connection point：
 
 #####################################################################
 
-geom_couple(aes(colour = pd, size = rd),data = mantel01, curvature = 0.1,
+              geom_couple(aes(colour = pd, size = rd),data = mantel01, curvature = 0.1,
 
               node.colour = c("blue", "blue"),
               
