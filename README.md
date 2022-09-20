@@ -30,6 +30,7 @@ spec_select = list(Y1 = 1,
                                            Y3 = 3,
                                            Y4 = 4
                                            )) 
+                                           
 
  mutate(rd = cut(r, breaks = c(-Inf, 0.2, 0.4, Inf),
  
