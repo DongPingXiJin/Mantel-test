@@ -44,3 +44,12 @@ Analyze mantel test results, classify r and p values and define labels：
                   labels = c("< 0.01", "0.01 - 0.05", ">= 0.05")))
                  
 #######################################################################
+
+Draw thermodynamic diagram：
+##################################################
+qcorrplot(correlate(env), 
+          type = "lower",
+          diag = FALSE,
+          ) +
+  geom_square()
+########################################################
