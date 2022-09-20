@@ -31,6 +31,7 @@ spec_select = list(Y1 = 1,
                                            Y4 = 4
                                            )) 
                                            
+Analyze mantel test results, classify r and p values and define labels：
 
  mutate(rd = cut(r, breaks = c(-Inf, 0.2, 0.4, Inf),
  
