@@ -138,3 +138,42 @@ Pay attention:
 2.Two matrices for mantel tset must have the same number of rows
 
 ##################################################################################################################################################
+
+
+
+####################################（2022/09/26）#########################
+
+I have uploaded the latest mantel test program.
+
+The details of this update are as follows:
+
+Add the thermal map saliency label (*) and set the size and color of the saliency label.
+
+The program is added at scale_ fill_ Gradientn() and scale_ size_ Between manual：
+
+#########################################################################
+                       geom_mark(size=2.5,
+		        
+            only_mark=T,
+	    
+            sig_level=c(0.05,0.01,0.001),
+	    
+            sig_thres=0.05)
+	    
+#########################################################################
+
+size=2.5,//Saliency label size
+		        
+only_mark=T,//No significant digital display
+	    
+sig_level=c(0.05,0.01,0.001),//Set significance level
+	    
+sig_thres=0.05)//Set saliency threshold
+
+and If you want to set the label color, you can add this sentence: colour='white'.
+
+############################################################################################
+
+
+
+
