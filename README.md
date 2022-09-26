@@ -152,6 +152,7 @@ Add the thermal map saliency label (*) and set the size and color of the salienc
 The program is added at scale_ fill_ Gradientn() and scale_ size_ Between manual：
 
 #########################################################################
+
                        geom_mark(size=2.5,
 		        
             only_mark=T,
